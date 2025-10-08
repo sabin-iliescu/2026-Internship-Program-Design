@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decision Memo - 2026 Internship Program</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj4KICA8cmVjdCB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgZmlsbD0iIzAwQjg5NCIvPgogIDx0ZXh0IHg9IjUwIiB5PSI2NSIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjQ4IiBmb250LXdlaWdodD0iYm9sZCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0id2hpdGUiPk48L3RleHQ+Cjwvc3ZnPg==">
+    <link rel="apple-touch-icon" sizes="180x180" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj4KICA8cmVjdCB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgZmlsbD0iIzAwQjg5NCIvPgogIDx0ZXh0IHg9IjUwIiB5PSI2NSIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjQ4IiBmb250LXdlaWdodD0iYm9sZCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0id2hpdGUiPk48L3RleHQ+Cjwvc3ZnPg==">
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-nagarro-green sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
+                <img src="https://www.nagarro.com/hubfs/NagarroWebsiteRedesign-Aug2020/Assets/Images/Nagarro%20green%20logo%20with%20title_opt.svg" alt="Nagarro Logo" height="40" class="me-3">
+                <span class="d-none d-md-inline"><i class="fas fa-memo me-2"></i>Decision Memo</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown">
+                            Core Framework
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="objectives.html">Objectives</a></li>
+                            <li><a class="dropdown-item" href="guiding-principles.html">Guiding Principles</a></li>
+                            <li><a class="dropdown-item" href="program-structure.html">Program Structure</a></li>
+                            <li><a class="dropdown-item" href="budget-considerations.html">Budget Considerations</a></li>
+                            <li><a class="dropdown-item" href="roi-measurement.html">ROI & Measurement</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown">
+                            Governance
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="governance-operating-model.html">Governance & Operating Model</a></li>
+                            <li><a class="dropdown-item" href="risks-mitigations.html">Risks & Mitigations</a></li>
+                            <li><a class="dropdown-item" href="timeline-decision-gates.html">Timeline & Decision Gates</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-bs-toggle="dropdown">
+                            Resources
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="regional-governance.html">Regional Governance Needs</a></li>
+                            <li><a class="dropdown-item" href="appendices.html">Appendices</a></li>
+                            <li><a class="dropdown-item" href="decision-memo.html">Decision Memo</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <section class="bg-info text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1 class="display-4 fw-bold mb-3">
+                        <span class="d-none d-md-inline"><i class="fas fa-memo me-3"></i>Decision Memo (1-Page)</span>
+                        <span class="d-md-none">Decision Memo</span>
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- Breadcrumbs -->
+    <nav aria-label="breadcrumb" class="bg-light py-2">
+        <div class="container">
+            <ol class="breadcrumb mb-0">
+                <li class="breadcrumb-item">
+                    <a href="index.html" class="text-decoration-none">
+                        <i class="fas fa-home me-1"></i>Home
+                    </a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="#" class="text-decoration-none">Resources</a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">
+                    <i class="fas fa-memo me-1"></i>Decision Memo
+                </li>
+            </ol>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+
+                    <!-- Content Grid -->
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <div class="card-body">
+                                    <h5 class="card-title text-primary mb-3">Context (Why now)</h5>
+                                    <p class="card-text">BUs face ongoing capability needs; current internship models are tech-siloed and inconsistent across regions.</p>
+                                    <p class="card-text">We propose a modular "Custom Internship" anchored in BU demand, with an AI literacy baseline for all interns and configurable tracks per BU/client.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <div class="card-body">
+                                    <h5 class="card-title text-primary mb-3">Proposal (What we'll run)</h5>
+                                    <p class="card-text"><strong>Core (all interns):</strong> AI literacy & productivity (LLMs, prompting, evaluation, RAG basics, responsible AI) + business acumen (vertical primers, delivery models, stakeholder comms).</p>
+                                    <p class="card-text"><strong>Tracks (by BU):</strong> Web/Mobile, Backend, Big Data Eng, QA/Automation, Cloud/DevOps, Data Science/ML.</p>
+                                    <p class="card-text"><strong>Client involvement:</strong> scoped capstones/POCs using sandboxed data, optional client juries.</p>
+                                    <p class="card-text"><strong>Format:</strong> 8–12 weeks, physical/online/hybrid as needed; standups, weekly checkpoints, mid-term & final demo.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <div class="card-body">
+                                    <h5 class="card-title text-primary mb-3">Operating Model & Roles</h5>
+                                    <p class="card-text"><strong>Sponsor:</strong> Regional Exec; <strong>Governance:</strong> decision gate approvals; <strong>PMO:</strong> end-to-end delivery; <strong>BU Leads:</strong> demand, mentors, placement; <strong>HR/IT/Finance/Brand/Compliance:</strong> hiring ops, tooling, budget control, campaigns, IP/data safety.</p>
+                                    <p class="card-text"><strong>RACI:</strong> One master lifecycle RACI + 4 mini-RACIs (Funding & Mentor %, Client POCs/IP, Placement & Conversion, Tooling/Access).</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <div class="card-body">
+                                    <h5 class="card-title text-primary mb-3">ROI & KPIs</h5>
+                                    <p class="card-text"><strong>Primary:</strong> FTE conversion 55–70% within 3 months; time-to-billability ≤ 6–8 weeks; 12-month retention ≥ 85%.</p>
+                                    <p class="card-text"><strong>Secondary:</strong> employer brand reach (impressions, events, MoUs), client-accepted POCs, innovation outputs.</p>
+                                    <p class="card-text"><strong>Reporting cadence:</strong> weekly dashboard during cohorts; ROI reviews at 3/6/12 months.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <div class="card-body">
+                                    <h5 class="card-title text-primary mb-3">Budget & Funding (Lens)</h5>
+                                    <p class="card-text"><strong>Direct:</strong> stipends, training/labs/certs, licenses (copilots, cloud), devices.</p>
+                                    <p class="card-text"><strong>Indirect:</strong> mentor time, onboarding/admin, facilities.</p>
+                                    <p class="card-text"><strong>Recommendation:</strong> Central seed + BU co-pay for Wave 1; mentor time capped at 10–15% per mentor, pre-approved as enablement and tracked monthly with Finance.</p>
+                                    <p class="card-text"><strong>Guardrails:</strong> budget variance ≤ ±10%; mentor-cap compliance ≥ 90%.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <div class="card-body">
+                                    <h5 class="card-title text-primary mb-3">Risks & Mitigations (Top 4)</h5>
+                                    <p class="card-text"><strong>Demand mismatch:</strong> quarterly refresh, waitlist, seat rebalancing.</p>
+                                    <p class="card-text"><strong>Low conversion:</strong> higher entry bar, stronger client context, mid-program interview pipeline.</p>
+                                    <p class="card-text"><strong>Cost creep (mentor/licensing):</strong> monthly burn reviews, pooled licenses, enforce mentor caps.</p>
+                                    <p class="card-text"><strong>IP/data issues:</strong> standard NDA/IP templates, sandboxed datasets, Compliance sign-off gate.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <div class="card-body">
+                                    <h5 class="card-title text-primary mb-3">Timeline & Gates</h5>
+                                    <p class="card-text"><strong>Oct–Nov 2025:</strong> Governance alignment (this memo).</p>
+                                    <p class="card-text"><strong>Dec 2025:</strong> BU demand lock; locations; mentor nominations; content refresh kickoff.</p>
+                                    <p class="card-text"><strong>Jan–Feb 2026:</strong> Roadshows & applications; screening & offers.</p>
+                                    <p class="card-text"><strong>Mar 2026:</strong> Onboarding readiness (IT/licensing/labs).</p>
+                                    <p class="card-text"><strong>Apr–Jun 2026:</strong> Cohort Wave 1 → Mid-term gate.</p>
+                                    <p class="card-text"><strong>Jul–Sep 2026:</strong> Optional Wave 2.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <div class="card-body">
+                                    <h5 class="card-title text-success mb-3">Approvals Requested (Today)</h5>
+                                    <p class="card-text"><strong>Guiding Principles</strong> — Approve the business-led, custom, AI-baseline, client-aware design.</p>
+                                    <p class="card-text"><strong>Funding & Mentor Accounting</strong> — Select Central seed + BU co-pay; approve mentor cap 10–15% counted as enablement.</p>
+                                    <p class="card-text"><strong>KPI Pack & Reporting Cadence</strong> — Approve targets and weekly + 3/6/12-month ROI reviews.</p>
+                                    <p class="card-text"><strong>Milestones</strong> — Approve Dec 2025 demand lock and Apr–Jun 2026 Cohort 1 (optional Jul–Sep Cohort 2).</p>
+                                    <p class="card-text"><em>What approval unlocks: budget allocation & mentor caps, BU demand finalization, university campaign launch, tooling/licensing procurement, and detailed syllabus build.</em></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Navigation -->
+                    <div class="d-flex justify-content-between mt-5">
+                        <a href="appendices.html" class="btn btn-outline-primary mobile-nav-btn">
+                            <i class="fas fa-arrow-left me-2"></i>Previous: Appendices
+                        </a>
+                        <a href="index.html" class="btn btn-primary mobile-nav-btn">
+                            Return to Home <i class="fas fa-home ms-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>2026 Internship Program</h5>
+                    <p class="mb-0">Comprehensive planning and strategic framework.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0">&copy; 2025 Internship Program. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JavaScript CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <style>
+        .bg-nagarro-green {
+            background-color: #00B894 !important;
+        }
+
+        .text-nagarro-green {
+            color: #00B894 !important;
+        }
+
+        .btn-nagarro {
+            background-color: #00B894;
+            border-color: #00B894;
+            color: white;
+        }
+
+        .btn-nagarro:hover {
+            background-color: #00A085;
+            border-color: #00A085;
+            color: white;
+        }
+
+        .text-primary {
+            color: #00B894 !important;
+        }
+
+        .btn-primary {
+            background-color: #00B894;
+            border-color: #00B894;
+        }
+
+        .btn-primary:hover {
+            background-color: #00A085;
+            border-color: #00A085;
+        }
+
+        .btn-outline-primary {
+            color: #00B894;
+            border-color: #00B894;
+        }
+
+        .btn-outline-primary:hover {
+            background-color: #00B894;
+            border-color: #00B894;
+            color: white;
+        }
+
+        /* Breadcrumbs Styling */
+        .breadcrumb {
+            background-color: transparent;
+            padding: 0;
+        }
+
+        .breadcrumb-item a {
+            color: #00B894;
+            transition: color 0.2s ease;
+        }
+
+        .breadcrumb-item a:hover {
+            color: #00A085;
+        }
+
+        .breadcrumb-item.active {
+            color: #6c757d;
+        }
+
+        .breadcrumb-item + .breadcrumb-item::before {
+            content: "›";
+            color: #6c757d;
+            font-weight: bold;
+        }
+
+        @media (max-width: 767.98px) {
+            .mobile-nav-btn {
+                font-size: 0.8rem !important;
+                padding: 0.4rem 0.8rem !important;
+            }
+            .mobile-nav-btn i {
+                font-size: 0.7rem;
+            }
+            .mobile-nav-btn:first-child {
+                margin-right: 0.5rem !important;
+            }
+            
+            /* Mobile breadcrumbs */
+            .breadcrumb {
+                font-size: 0.85rem;
+            }
+            
+            .breadcrumb-item {
+                display: inline-flex;
+                align-items: center;
+            }
+        }
+    </style>
+</body>
+</html>
