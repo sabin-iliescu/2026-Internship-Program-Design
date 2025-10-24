@@ -23,15 +23,14 @@ This project contains the complete planning documentation and strategic framewor
 ## 🗂️ Pages Structure
 
 1. **[Homepage](index.html)** - Governance Alignment Pack overview with navigation tree
-2. **[Objectives & Guiding Principles](objectives.html)** - Program goals, success metrics, and core principles
+2. **[Objectives & Guiding Principles](objectives.html)** - Program goals, success metrics, core principles, and KPIs
 3. **[Program Structure](program-structure.html)** - Curriculum design and delivery format
 4. **[Budget Considerations](budget-considerations.html)** - Financial planning and funding models
-5. **[ROI & Measurement](roi-measurement.html)** - KPIs and success tracking
-6. **[Governance & Operating Model](governance-operating-model.html)** - Organizational structure and RACI matrices
-7. **[Risks & Mitigations](risks-mitigations.html)** - Risk assessment and mitigation strategies
-8. **[Timeline & Decision Gates](timeline-decision-gates.html)** - Project timeline and key milestones
-9. **[Regional Governance](regional-governance.html)** - Regional requirements and considerations
-10. **[Appendices](appendices.html)** - Supporting documentation and resources
+5. **[Governance & Operating Model](governance-operating-model.html)** - Organizational structure and RACI matrices
+6. **[Risks & Mitigations](risks-mitigations.html)** - Risk assessment and mitigation strategies
+7. **[Timeline & Decision Gates](timeline-decision-gates.html)** - Project timeline and key milestones
+8. **[Regional Governance](regional-governance.html)** - Regional requirements and considerations
+9. **[Appendices](appendices.html)** - Supporting documentation and resources
 
 ## 🎨 Features
 
