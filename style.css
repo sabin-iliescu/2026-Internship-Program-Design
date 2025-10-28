@@ -134,3 +134,112 @@
 .bg-nagarro-gradient {
     background: linear-gradient(135deg, #00B894 0%, #00A085 100%) !important;
 }
+
+/* Enhanced homepage color system */
+.bg-nagarro-light {
+    background-color: rgba(0, 184, 148, 0.05) !important;
+}
+
+.bg-nagarro-gradient-light {
+    background: linear-gradient(135deg, rgba(0, 184, 148, 0.1) 0%, rgba(0, 184, 148, 0.05) 100%) !important;
+}
+
+/* Semantic color hover effects */
+.hover-primary:hover {
+    color: #0d6efd !important;
+    transform: translateX(5px);
+    transition: all 0.3s ease;
+}
+
+.hover-warning:hover {
+    color: #fd7e14 !important;
+    transform: translateX(5px);
+    transition: all 0.3s ease;
+}
+
+.hover-success:hover {
+    color: #198754 !important;
+    transform: translateX(5px);
+    transition: all 0.3s ease;
+}
+
+/* Enhanced gradients with Nagarro colors */
+.bg-gradient-nagarro {
+    background: linear-gradient(135deg, #00B894 0%, #00A085 50%, #009975 100%) !important;
+}
+
+.bg-gradient-primary-nagarro {
+    background: linear-gradient(135deg, #0d6efd 0%, #00B894 100%) !important;
+}
+
+/* Tree structure enhanced styling */
+.tree-item strong {
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.tree-item a {
+    font-size: 0.9rem;
+    padding: 4px 8px;
+    border-radius: 6px;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.tree-item i {
+    width: 18px;
+    text-align: center;
+    opacity: 0.8;
+}
+
+/* Enhanced border styling */
+.border-nagarro-green-25 {
+    border-color: rgba(0, 184, 148, 0.25) !important;
+}
+
+.border-nagarro-green-50 {
+    border-color: rgba(0, 184, 148, 0.5) !important;
+}
+
+/* Equal height containers for homepage sections - Enhanced */
+.equal-height-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    align-items: stretch;
+}
+
+.equal-height-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.equal-height-content {
+    display: flex;
+    flex-direction: column;
+    min-height: 450px;
+    height: 100%;
+}
+
+.equal-height-content h5 {
+    flex-shrink: 0;
+}
+
+.tree-structure,
+.video-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+@media (max-width: 991.98px) {
+    .equal-height-container {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .equal-height-content {
+        min-height: auto;
+    }
+}
