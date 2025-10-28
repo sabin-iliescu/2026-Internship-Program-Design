@@ -171,6 +171,20 @@
     background: linear-gradient(135deg, rgba(0, 184, 148, 0.1) 0%, rgba(0, 184, 148, 0.05) 100%) !important;
 }
 
+/* Mobile navigation buttons for objectives.html */
+@media (max-width: 767.98px) {
+    .mobile-nav-btn {
+        font-size: 0.8rem !important;
+        padding: 0.4rem 0.8rem !important;
+    }
+    .mobile-nav-btn i {
+        font-size: 0.7rem;
+    }
+    .mobile-nav-btn:first-child {
+        margin-right: 0.5rem !important;
+    }
+}
+
 /* Semantic color hover effects */
 .hover-primary:hover {
     color: #0d6efd !important;
