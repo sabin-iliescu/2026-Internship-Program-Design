@@ -1,0 +1,136 @@
+/* Enhanced styles for index.html - Homepage specific styles */
+
+/* Gradient backgrounds */
+.bg-gradient {
+    background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+}
+
+.min-vh-75 {
+    min-height: 75vh;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Card animations and hover effects */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15) !important;
+}
+
+/* Navigation hover effects */
+.nav-link:hover {
+    color: #ffffff !important;
+}
+
+/* Tree Structure Styles */
+.tree-structure {
+    font-size: 0.95rem;
+}
+
+/* Hero Section Styles */
+.hero-card {
+    animation: fadeInUp 0.8s ease-out;
+    border: 1px solid rgba(0, 123, 255, 0.2);
+}
+
+.hero-title {
+    font-size: 2.2rem;
+    line-height: 1.3;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.objective-section {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%) !important;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.hero-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(0,123,255,0.15) !important;
+    transition: all 0.3s ease;
+}
+
+/* Tree navigation styling */
+.tree-item {
+    margin-bottom: 8px;
+    padding: 4px 0;
+}
+
+.tree-item a {
+    transition: all 0.3s ease;
+    padding: 2px 8px;
+    border-radius: 4px;
+    display: inline-block;
+    color: #000000 !important;
+}
+
+.tree-item a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    transform: translateX(5px);
+    color: #000000 !important;
+}
+
+.tree-item strong {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.tree-item i {
+    width: 16px;
+    text-align: center;
+}
+
+/* Nagarro Brand Colors */
+.bg-nagarro-green {
+    background-color: #00B894 !important;
+}
+
+.text-nagarro-green {
+    color: #00B894 !important;
+}
+
+.border-nagarro-green {
+    border-color: #00B894 !important;
+}
+
+.bg-nagarro-dark {
+    background-color: #2d3436 !important;
+}
+
+.text-nagarro-dark {
+    color: #2d3436 !important;
+}
+
+/* Override navbar to use Nagarro colors */
+.navbar-dark.bg-primary {
+    background-color: #00B894 !important;
+}
+
+/* Enhanced tree hover effects with Nagarro colors */
+.tree-item a:hover {
+    background-color: rgba(0, 184, 148, 0.15) !important;
+    transform: translateX(5px);
+    color: #2d3436 !important;
+    border-left: 3px solid #00B894;
+}
+
+/* Enhanced card hover effects */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 184, 148, 0.15) !important;
+}
+
+/* Nagarro-style gradient for special sections */
+.bg-nagarro-gradient {
+    background: linear-gradient(135deg, #00B894 0%, #00A085 100%) !important;
+}
