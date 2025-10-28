@@ -1,5 +1,32 @@
 /* Enhanced styles for index.html - Homepage specific styles */
 
+/* Skip Navigation for Accessibility */
+.visually-hidden-focusable:not(:focus):not(:focus-within) {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+}
+
+.visually-hidden-focusable:focus {
+    position: absolute !important;
+    top: 10px !important;
+    left: 10px !important;
+    z-index: 9999 !important;
+    width: auto !important;
+    height: auto !important;
+    padding: 0.5rem 1rem !important;
+    margin: 0 !important;
+    overflow: visible !important;
+    clip: auto !important;
+    white-space: normal !important;
+}
+
 /* Gradient backgrounds */
 .bg-gradient {
     background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
