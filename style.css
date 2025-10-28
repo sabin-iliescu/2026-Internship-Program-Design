@@ -36,22 +36,10 @@
     min-height: 75vh;
 }
 
-/* Animations */
-@keyframes fadeInUp {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* Card animations and hover effects */
-.card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
+/* Card styling - no animations */
 .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(0,0,0,0.15) !important;
+    /* Subtle hover effect without animation */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1) !important;
 }
 
 /* Navigation hover effects */
@@ -66,7 +54,7 @@
 
 /* Hero Section Styles */
 .hero-card {
-    animation: fadeInUp 0.8s ease-out;
+    /* Removed animation */
     border: 1px solid rgba(0, 123, 255, 0.2);
 }
 
@@ -82,9 +70,8 @@
 }
 
 .hero-card:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 10px 30px rgba(0,123,255,0.15) !important;
-    transition: all 0.3s ease;
+    /* Removed animation */
+    box-shadow: 0 6px 20px rgba(0,123,255,0.1) !important;
 }
 
 /* Tree navigation styling */
@@ -94,7 +81,7 @@
 }
 
 .tree-item a {
-    transition: all 0.3s ease;
+    /* Removed transitions */
     padding: 2px 8px;
     border-radius: 4px;
     display: inline-block;
@@ -103,7 +90,7 @@
 
 .tree-item a:hover {
     background-color: rgba(0, 0, 0, 0.3);
-    transform: translateX(5px);
+    /* Removed transform animation */
     color: #000000 !important;
 }
 
@@ -146,15 +133,15 @@
 /* Enhanced tree hover effects with Nagarro colors */
 .tree-item a:hover {
     background-color: rgba(0, 184, 148, 0.15) !important;
-    transform: translateX(5px);
+    /* Removed transform animation */
     color: #2d3436 !important;
     border-left: 3px solid #00B894;
 }
 
 /* Enhanced card hover effects */
 .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(0, 184, 148, 0.15) !important;
+    /* Removed transform animation */
+    box-shadow: 0 6px 20px rgba(0, 184, 148, 0.1) !important;
 }
 
 /* Nagarro-style gradient for special sections */
@@ -188,20 +175,17 @@
 /* Semantic color hover effects */
 .hover-primary:hover {
     color: #0d6efd !important;
-    transform: translateX(5px);
-    transition: all 0.3s ease;
+    /* Removed animation */
 }
 
 .hover-warning:hover {
     color: #fd7e14 !important;
-    transform: translateX(5px);
-    transition: all 0.3s ease;
+    /* Removed animation */
 }
 
 .hover-success:hover {
     color: #198754 !important;
-    transform: translateX(5px);
-    transition: all 0.3s ease;
+    /* Removed animation */
 }
 
 /* Enhanced gradients with Nagarro colors */
@@ -224,7 +208,7 @@
     padding: 4px 8px;
     border-radius: 6px;
     display: inline-block;
-    transition: all 0.3s ease;
+    /* Removed transition */
 }
 
 .tree-item i {

@@ -1,18 +1,4 @@
-/* Enhanced JavaScript functionality for the homepage */
-
-// Smooth scrolling for anchor links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-            target.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
-            });
-        }
-    });
-});
+/* Enhanced JavaScript functionality - No animations version */
 
 // Add active class to current navigation item
 const currentLocation = location.pathname.split('/').pop() || 'index.html';
@@ -24,48 +10,15 @@ navLinks.forEach(link => {
     }
 });
 
-// Add loading animation for cards
-const observerOptions = {
-    threshold: 0.1,
-    rootMargin: '0px 0px -50px 0px'
-};
-
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.style.animation = 'fadeInUp 0.6s ease forwards';
-            observer.unobserve(entry.target);
-        }
-    });
-}, observerOptions);
-
-// Apply fade-in animation to cards
-document.querySelectorAll('.card').forEach(card => {
-    card.style.opacity = '0';
-    card.style.transform = 'translateY(20px)';
-    observer.observe(card);
-});
-
-// Enhanced tree navigation interaction
+// Enhanced navigation without animations
 document.querySelectorAll('.tree-item a').forEach(link => {
     link.addEventListener('mouseenter', function() {
-        this.style.transform = 'translateX(5px)';
+        // Simple hover effect without animation
+        this.style.backgroundColor = 'rgba(0, 184, 148, 0.15)';
     });
     
     link.addEventListener('mouseleave', function() {
-        this.style.transform = 'translateX(0)';
-    });
-});
-
-// Add loading state for external links
-document.querySelectorAll('a[href^="http"]').forEach(link => {
-    link.addEventListener('click', function() {
-        const originalText = this.innerHTML;
-        this.innerHTML = '<i class="fas fa-spinner fa-spin me-1"></i>' + originalText;
-        
-        setTimeout(() => {
-            this.innerHTML = originalText;
-        }, 1000);
+        this.style.backgroundColor = '';
     });
 });
 
