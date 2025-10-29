@@ -573,4 +573,13 @@
     .equal-height-content {
         min-height: auto;
     }
+    
+    /* Mobile-only: Put Program Overview (video) first */
+    .program-overview-section {
+        order: 1;
+    }
+    
+    .program-structure-section {
+        order: 2;
+    }
 }
