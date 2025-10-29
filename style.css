@@ -134,16 +134,23 @@
 .scroll-animate.visible .btn:first-child { transition-delay: 0.15s; }
 .scroll-animate.visible .btn:last-child { transition-delay: 0.25s; }
 
-/* Magnetic button hover with ripple effect */
-.scroll-animate .btn:hover {
-    transform: translateY(-3px) scale(1.05);
-    box-shadow: 
-        0 8px 20px rgba(0, 184, 148, 0.2),
-        0 4px 12px rgba(0, 184, 148, 0.15);
-    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+/* Magnetic button hover with ripple effect - Only on hover-capable devices */
+@media (hover: hover) {
+    .scroll-animate .btn:hover {
+        transform: translateY(-3px) scale(1.05);
+        box-shadow: 
+            0 8px 20px rgba(0, 184, 148, 0.2),
+            0 4px 12px rgba(0, 184, 148, 0.15);
+        transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+
+    .scroll-animate .btn:hover::before {
+        width: 300px;
+        height: 300px;
+    }
 }
 
-/* Ripple effect for buttons */
+/* Ripple effect for buttons - Only show on hover-capable devices */
 .scroll-animate .btn::before {
     content: '';
     position: absolute;
@@ -158,10 +165,30 @@
     z-index: 0;
 }
 
-.scroll-animate .btn:hover::before {
-    width: 300px;
-    height: 300px;
+/* Mobile-friendly button improvements */
+@media (max-width: 991.98px) {
+    .btn {
+        touch-action: manipulation;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        user-select: none;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    /* Remove hover effects on mobile completely */
+    .scroll-animate .btn:hover {
+        transform: none !important;
+        box-shadow: none !important;
+    }
+    
+    .scroll-animate .btn::before {
+        display: none !important;
+    }
 }
+
+
 
 .scroll-animate .btn > * {
     position: relative;
@@ -420,17 +447,34 @@
     background: linear-gradient(135deg, rgba(0, 184, 148, 0.1) 0%, rgba(0, 184, 148, 0.05) 100%) !important;
 }
 
-/* Mobile navigation buttons for objectives.html */
+/* Mobile navigation buttons - Fix double-tap issue */
 @media (max-width: 767.98px) {
     .mobile-nav-btn {
         font-size: 0.8rem !important;
         padding: 0.4rem 0.8rem !important;
+        /* Fix mobile touch issues */
+        touch-action: manipulation;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        user-select: none;
+        cursor: pointer;
     }
     .mobile-nav-btn i {
         font-size: 0.7rem;
+        pointer-events: none; /* Prevent icon from intercepting clicks */
     }
     .mobile-nav-btn:first-child {
         margin-right: 0.5rem !important;
+    }
+    
+    /* Disable hover effects on touch devices */
+    .scroll-animate .mobile-nav-btn:hover {
+        transform: none !important;
+        box-shadow: none !important;
+    }
+    
+    .scroll-animate .mobile-nav-btn::before {
+        display: none !important;
     }
 }
 
