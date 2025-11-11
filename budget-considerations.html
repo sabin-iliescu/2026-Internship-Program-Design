@@ -142,6 +142,95 @@
                         </div>
                     </div>
                     
+                    <!-- Hiring Comparison Section -->
+                    <div class="row mt-5 scroll-animate">
+                        <div class="col-12">
+                            <div class="card border-0 shadow-sm">
+                                <div class="card-body">
+                                    <h4 class="card-title text-nagarro-green mb-4">
+                                        <i class="fas fa-balance-scale me-2"></i>Hiring Comparison
+                                    </h4>
+                                    
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered hiring-comparison-table">
+                                            <thead>
+                                                <tr>
+                                                    <th rowspan="2" class="align-middle text-center category-header">Category</th>
+                                                    <th colspan="2" class="text-center normal-hiring-header">Normal Hiring Process</th>
+                                                    <th colspan="2" class="text-center internship-hiring-header">Internship-to-hire</th>
+                                                </tr>
+                                                <tr>
+                                                    <th class="text-center pros-header">Pros</th>
+                                                    <th class="text-center cons-header">Cons</th>
+                                                    <th class="text-center pros-header">Pros</th>
+                                                    <th class="text-center cons-header">Cons</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="category-cell"><strong>Candidate evaluation</strong></td>
+                                                    <td class="pros-cell">• Faster hiring process<br>• Can fill junior needs quickly</td>
+                                                    <td class="cons-cell">• Abilities more difficult to evaluate<br>• Harder to assess soft skills</td>
+                                                    <td class="pros-cell">• Extended trial period<br>• Stronger understanding of intern's capabilities and growth potential</td>
+                                                    <td class="cons-cell">• Longer hiring and overall onboarding process<br>• Requiring more mentoring and supervision</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="category-cell"><strong>Time & cost</strong></td>
+                                                    <td class="pros-cell">• Immediate availability<br>• Less time spent on training if candidate has some experience<br>• Fewer admin and tech people involved</td>
+                                                    <td class="cons-cell">• Higher cost if turnover is high<br>• May need to rehire and retrain</td>
+                                                    <td class="pros-cell">• Cost-effective way to build a talent pipeline<br>• Reduced risk of bad hires<br>• Reduced internship costs if collaborating with university practice papers</td>
+                                                    <td class="cons-cell">• Time investment in training and mentoring<br>• More staff involved in the process</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="category-cell"><strong>Talent development and retention</strong></td>
+                                                    <td class="pros-cell">• Brings in fresh perspectives<br>• Can hire based on specific skill sets</td>
+                                                    <td class="cons-cell">• Cultural misalignment risk<br>• May not be as adaptable</td>
+                                                    <td class="pros-cell">• Higher loyalty and retention<br>• Interns often feel more engaged with the company</td>
+                                                    <td class="cons-cell">• Longer time to full productivity<br>• May not accept full-time offer due to university studies</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="category-cell"><strong>Talent pool & pipeline</strong></td>
+                                                    <td class="pros-cell">• Easier to scale hiring quickly<br>• Can target specific profiles</td>
+                                                    <td class="cons-cell">-</td>
+                                                    <td class="pros-cell">• Builds a sustainable pipeline<br>• Enhances employer brand at universities</td>
+                                                    <td class="cons-cell">• Smaller, less experienced pool<br>• Requires more structured programs</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="category-cell"><strong>Risk and flexibility</strong></td>
+                                                    <td class="pros-cell">• Clear expectations and structure<br>• Immediate integration into teams</td>
+                                                    <td class="cons-cell">• Costly and complex to terminate<br>• Risk of early attrition</td>
+                                                    <td class="pros-cell">• Low-risk evaluation<br>• Easier to discontinue if not a match</td>
+                                                    <td class="cons-cell">• May lose talent to competitors before conversion<br>• Uncertainty around intern's long-term plans</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="category-cell"><strong>Onboarding and ramp-up time</strong></td>
+                                                    <td class="pros-cell">• Faster ramp-up if candidate has prior experience</td>
+                                                    <td class="cons-cell">• Will still require onboarding and training</td>
+                                                    <td class="pros-cell">• Interns already familiar with tools and teams upon conversion<br>• Reduced onboarding time</td>
+                                                    <td class="cons-cell">• Initial learning curve during internship phase</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="category-cell"><strong>Cultural integration</strong></td>
+                                                    <td class="pros-cell">• Cultural fit assessed during interviews</td>
+                                                    <td class="cons-cell">• Cultural misalignment may only surface post-hire</td>
+                                                    <td class="pros-cell">• Real-time cultural fit evaluation over weeks/months<br>• Better long-term alignment</td>
+                                                    <td class="cons-cell">• Requires time and effort to integrate interns into team culture</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="category-cell"><strong>Employer branding and university relationship</strong></td>
+                                                    <td class="pros-cell">• Less resource-intensive to maintain</td>
+                                                    <td class="cons-cell">• Limited long-term brand impact</td>
+                                                    <td class="pros-cell">• Enhances visibility and reputation among students<br>• Builds relationships with universities</td>
+                                                    <td class="cons-cell">• Requires ongoing investment in internship programs and partnerships</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
                     <!-- Navigation -->
                     <div class="d-flex justify-content-between mt-5 scroll-animate">
                         <a href="program-structure.html" class="btn btn-outline-primary mobile-nav-btn">
@@ -189,6 +278,72 @@
             }
         }
         
+        /* Hiring Comparison Table Styles */
+        .hiring-comparison-table {
+            font-size: 0.85rem;
+            border: 2px solid #00B894;
+            margin-bottom: 0;
+        }
+        
+        .hiring-comparison-table th {
+            font-weight: bold;
+            padding: 0.75rem 0.5rem;
+            vertical-align: middle;
+            font-size: 0.8rem;
+        }
+        
+        .hiring-comparison-table td {
+            padding: 0.75rem 0.5rem;
+            vertical-align: top;
+            border-color: #e0e0e0;
+            line-height: 1.4;
+        }
+        
+        .category-header {
+            background-color: #00B894 !important;
+            color: white !important;
+            min-width: 180px;
+        }
+        
+        .normal-hiring-header {
+            background-color: #0056b3 !important;
+            color: white !important;
+        }
+        
+        .internship-hiring-header {
+            background-color: #28a745 !important;
+            color: white !important;
+        }
+        
+        .pros-header {
+            background-color: rgba(40, 167, 69, 0.1) !important;
+            color: #155724 !important;
+            border: 1px solid #28a745 !important;
+        }
+        
+        .cons-header {
+            background-color: rgba(220, 53, 69, 0.1) !important;
+            color: #721c24 !important;
+            border: 1px solid #dc3545 !important;
+        }
+        
+        .category-cell {
+            background-color: #f8f9fa !important;
+            font-weight: bold;
+            border-right: 2px solid #00B894 !important;
+            min-width: 180px;
+        }
+        
+        .pros-cell {
+            background-color: rgba(40, 167, 69, 0.05) !important;
+            border-left: 3px solid #28a745 !important;
+        }
+        
+        .cons-cell {
+            background-color: rgba(220, 53, 69, 0.05) !important;
+            border-left: 3px solid #dc3545 !important;
+        }
+
         /* RACI Table Styles */
         .raci-table {
             font-size: 0.9rem;
@@ -260,6 +415,43 @@
             color: #333;
         }
         
+        /* Mobile Responsive for Hiring Comparison Table */
+        @media (max-width: 991.98px) {
+            .hiring-comparison-table {
+                font-size: 0.75rem;
+            }
+            
+            .hiring-comparison-table th, .hiring-comparison-table td {
+                padding: 0.5rem 0.3rem;
+            }
+            
+            .category-cell {
+                min-width: 150px;
+                font-size: 0.7rem;
+            }
+        }
+        
+        @media (max-width: 767.98px) {
+            .hiring-comparison-table {
+                font-size: 0.7rem;
+            }
+            
+            .hiring-comparison-table th, .hiring-comparison-table td {
+                padding: 0.4rem 0.25rem;
+                font-size: 0.65rem;
+            }
+            
+            .category-cell {
+                min-width: 120px;
+                font-size: 0.6rem;
+            }
+            
+            .hiring-comparison-table .pros-cell,
+            .hiring-comparison-table .cons-cell {
+                line-height: 1.2;
+            }
+        }
+
         /* Mobile Responsive for RACI Table */
         @media (max-width: 767.98px) {
             .raci-table {
